@@ -145,3 +145,5 @@ df_agg_FR['Medals_cum'] = np.cumsum(df_agg_FR['Medals'])
 df_agg_FR['Participants_cum'] = np.cumsum(df_agg_FR['Participants']) 
 
 df_agg_FR[['Medals_cum','Participants_cum', 'Ratio' ]].plot( figsize=(12,12))
+
+df_agg_FR[['Year', 'Medals_cum','Participants_cum', 'Ratio' ]].to_csv(path_or_buf='D:/Google Drive/ENSAE/Dataviz/fr_agg.csv', sep = ',', index=False)
